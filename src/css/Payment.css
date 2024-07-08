@@ -163,7 +163,7 @@ form {
     display: flex;
     gap: 5px;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
     .custom-radio{
         font-size: 16px;
@@ -182,12 +182,12 @@ form {
         height: 6px;
     }
     .image {
-        width: 54.11px;
+        width: 52.11px;
         height: 44.82px;
        
     }
     .image > img {
-        width: 25.99px;
+        width: 23.99px;
         height: 29.88px;
         object-fit: contain;
     }
@@ -196,7 +196,7 @@ form {
         /* grid-template-columns: 1fr; */
         gap: 10px;
         padding: 20px 0 20px 0;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
     .atms{
         gap: 5px;
