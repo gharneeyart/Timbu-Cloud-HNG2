@@ -151,7 +151,7 @@ form {
 @media (max-width: 768px) {
     
     .payment {
-        width: 100%;
+        width: 356px;
         padding: 0 0 0 0;
         display: flex;
         flex-direction: column;
@@ -163,9 +163,11 @@ form {
     display: flex;
     gap: 5px;
     width: 100%;
+    border: 1px solid black;
 }
     .custom-radio{
         font-size: 16px;
+        padding-left: 25px;
     }
     .radio-btn {
         height: 12px;

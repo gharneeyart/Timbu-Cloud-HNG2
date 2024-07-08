@@ -85,7 +85,7 @@
     }
     .names{
         gap: 17px;
-        width: 350px;
+        width: 320px;
     }
     .names > input{
         width: 150px;
