@@ -182,12 +182,12 @@ form {
         height: 6px;
     }
     .image {
-        width: 56.11px;
+        width: 54.11px;
         height: 44.82px;
        
     }
     .image > img {
-        width: 27.99px;
+        width: 25.99px;
         height: 29.88px;
         object-fit: contain;
     }
@@ -215,7 +215,7 @@ form {
     }
 
     .confirm {
-        width: 362px;
+        width: 330px;
         height: 50px;
         font-size: 18px;
         margin:20px 0 10px 0;
