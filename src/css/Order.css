@@ -75,6 +75,12 @@ text-align: left;
     margin: 20px 0 30px 0;
     font-size: 20px;
     font-weight: 700;
+    cursor: pointer;
+}
+.apply:hover{
+    border: 2px solid #D63249;
+    background-color: #FFFFFF;
+    color: #D63249;
 }
 .order-total{
     display: flex;
@@ -102,6 +108,12 @@ font-size: 20px;
 font-weight: 700;
 line-height: 24.2px;
 color: #FFFFFF;
+cursor: pointer;
+}
+.check:hover{
+    background-color: #FFFFFF ;
+    color: #FE810D;
+    border: 2px solid #FE810D;
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .orders{

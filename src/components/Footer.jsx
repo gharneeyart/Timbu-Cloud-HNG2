@@ -3,14 +3,14 @@ import '../css/Footer.css'
 import Icon1 from '../assets/image/Vector (2).png'
 import Icon2 from '../assets/image/Group.png'
 import Icon3 from '../assets/image/Vector (3).png'
-import Arrow from '../assets/image/Right-Arrow 1.png'
+import { GoArrowUp } from "react-icons/go";
 
 
 const Footer = () => {
   return (
     <div className='footer'>
         <a href='/' className="arrow">
-            <img src={Arrow} alt="" />
+        <GoArrowUp size={100} style={{color:'white'}}/>
         </a>
         <div className="group">
             <div className="div">

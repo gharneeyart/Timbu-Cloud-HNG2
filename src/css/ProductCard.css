@@ -70,7 +70,13 @@ line-height: 29.05px;
 text-align: center;
 color: #FFFFFF;
 border: 0;
+cursor: pointer;
 
+}
+.addtocart:hover{
+    background-color: #FFFFFF ;
+    color: #FE810D;
+    border: 2px solid #FE810D;
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .card{
