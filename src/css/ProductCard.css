@@ -115,7 +115,7 @@ border: 0;
 @media (max-width: 768px) {
     
     .card{
-        width: 350px;
+        width: 340px;
         height: 480px;
     }
     .name{
