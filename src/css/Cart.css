@@ -1,0 +1,34 @@
+.cartpage{
+    max-width: 1280px;
+    min-height: 600px;
+    display: flex;
+    padding: 0;
+}
+.shopping{
+    width: 70%;
+}
+.order{
+    width: 30%;
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .cartpage{
+        flex-direction: column;
+    }
+    .order{
+        width: 100%;
+    }
+    .shopping{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+   .cartpage{
+    flex-direction: column;
+   }
+   .shopping{
+    width: 100%;
+}
+.order{
+    width: 100%;
+}
+}

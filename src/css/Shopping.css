@@ -1,0 +1,214 @@
+.shop-head{
+    padding: 40px 40px 0 40px;
+    height: 95%;
+}
+.cart-head{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 1px solid #B1ACAC;
+    padding-bottom: 5px;
+}
+.cart-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 21.78px;
+    text-align: left;
+    padding: 30px 0 20px 0;
+}
+.cart-det{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+.cart-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 145px;
+}
+.cart-info{
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+}
+.cart-p{
+    padding: 0;
+    margin: 0;
+    width: 250px;
+}
+.cart-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+}
+.quantities{
+    display: flex;
+    justify-content: space-between;
+    width: 99px;
+    height: 36px;
+    border: 1px 0px 0px 0px;
+}
+.quantities > button{
+    width: 20px;
+    height: 36px;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.89px;
+    text-align: left;
+    background: none;
+    border: 0;
+}
+.quant{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 36px;
+border: 1px solid #605E5E;
+font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 24.2px;
+text-align: left;
+}
+.continue{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .shop-head{
+        padding: 20px 25px 30px 25px;
+    }
+    .cart-det{
+        display: flex;
+        justify-content: space-between;
+    } 
+    .cart-p{
+        width:235px;
+    }
+    .cart-info{
+        gap: 10px;
+    }
+    .continue{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .shop-head{
+        border: 1px solid black;
+        padding: 20px 20px 30px 20px;
+    }
+    .cart-head{ 
+        font-size: 24px;
+    }
+    .cart-card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 74px;
+    }
+    .cart-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 21.78px;
+        text-align: left;
+        padding: 30px 0 20px 0;
+    }
+    .cart-det{
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+    } 
+    .cart-info > img{
+        width: 72px;
+        height: 74px;
+    }
+    .cart-p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%23555"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>');
+        background-repeat: no-repeat;
+        width: 20px; 
+        height: 20px; 
+    }
+    .cart-p > p {
+        display: none;
+    }
+    .cart-price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+    width: 55%;
+    }
+    .quantities{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 79px;
+        height: 36px;
+        top: 427px;
+    }
+    .quantities > button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14px;
+        height: 24px;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 33.89px;
+        background: none;
+    }
+    .quant{
+        width: 28px;
+        height: 25px;
+        border: 1px solid #605E5E;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24.2px;
+        text-align: left;
+        }
+        .continue{
+            display: none;
+        }
+}
