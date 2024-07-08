@@ -85,21 +85,21 @@
     }
     .names{
         gap: 17px;
-        width: 395px;
+        width: 320px;
     }
     .names > input{
-        width: 185px;
+        width: 160px;
     height: 57px;
     }
     .info > select{
-        width: 185px;
+        width: 160px;
     height: 57px;
     }
     .info > input{
-        width: 185px;
+        width: 160px;
     height: 57px;
     }
     .info > .address{
-        width: 360px;
+        width: 300px;
     }
 }
