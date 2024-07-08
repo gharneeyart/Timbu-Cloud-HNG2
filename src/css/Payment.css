@@ -151,7 +151,12 @@ form {
 @media (max-width: 768px) {
     
     .payment {
+        width: 100%;
         padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
     
 form {
@@ -175,7 +180,7 @@ form {
         height: 6px;
     }
     .image {
-        width: 58.11px;
+        width: 56.11px;
         height: 44.82px;
        
     }
@@ -188,8 +193,8 @@ form {
         width: 100%;
         /* grid-template-columns: 1fr; */
         gap: 10px;
-        padding: 20px 0 10px 0;
-        /* border: 1px solid black; */
+        padding: 20px 0 20px 0;
+        border: 1px solid black;
     }
     .atms{
         gap: 5px;
@@ -198,12 +203,12 @@ form {
         font-size: 16px;
     }
     .atms > input {
-        width: 100.66px;
+        width: 80.66px;
         height: 25.48px;
         
     }
     .atms > select{
-        width: 75.66px;
+        width: 55.66px;
         height: 25.48px;
     }
 
