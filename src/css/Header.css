@@ -49,9 +49,6 @@ body {
     text-decoration: none; 
     font-family: Inter;
   }
-  .navbar-link:hover {
-    text-decoration: underline;
-  }
   .cart{
     width: 140px;
     height: 54px;

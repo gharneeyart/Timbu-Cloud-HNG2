@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-home">
       <div className="navbar-container">
-        <a href="#" className="brand"><h1 className="logo">Timbu Cloud</h1></a>
+        <a href="/" className="brand"><h1 className="logo">Timbu Cloud</h1></a>
         
         <div className='navbar-menu'>
           <a href="/" className="navbar-link">Home</a>

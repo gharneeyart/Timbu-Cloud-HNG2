@@ -5,12 +5,13 @@ import Icon2 from '../assets/image/Group.png'
 import Icon3 from '../assets/image/Vector (3).png'
 import Arrow from '../assets/image/Right-Arrow 1.png'
 
+
 const Footer = () => {
   return (
     <div className='footer'>
-        <div className="arrow">
+        <a href='/' className="arrow">
             <img src={Arrow} alt="" />
-        </div>
+        </a>
         <div className="group">
             <div className="div">
                 <img src={Icon1} alt="" className='img'/>
