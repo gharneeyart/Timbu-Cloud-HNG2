@@ -151,7 +151,7 @@ form {
 @media (max-width: 768px) {
     
     .payment {
-        width: 356px;
+        width: 330px;
         padding: 0 0 0 0;
         display: flex;
         flex-direction: column;

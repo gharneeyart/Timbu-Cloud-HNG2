@@ -150,7 +150,7 @@ text-align: left;
     }
     .cart-det{
         display: flex;
-        justify-content: space-between;
+        gap: 5px;
         width: 55%;
     } 
     .cart-info > img{
