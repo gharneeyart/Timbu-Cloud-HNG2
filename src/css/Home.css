@@ -18,6 +18,7 @@
     font-size: 18px;
     line-height: 21.78px;
     text-align: left;
+    font-family: Inter;
   }
   .navbar-toggle{
     color: linear-gradient(90deg, #FF8D24 0%, #FB16C8 100%);
