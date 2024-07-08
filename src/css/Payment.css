@@ -171,6 +171,9 @@ form {
     width: 100%;
     /* border: 1px solid black; */
 }
+.custom-radio{
+    padding-left: 25px;
+}
 .custom-radio input {
     position: absolute;
     opacity: 0;
@@ -180,8 +183,8 @@ form {
     position: absolute;
     top: 0;
     left: 0;
-    height: 15.5px;
-    width: 15.5px;
+    height: 12.5px;
+    width: 12.5px;
     border: 3px solid #E5DEDE;
     margin-top: 15px;
     border-radius: 50%;
@@ -198,10 +201,10 @@ form {
     display: block;
 }
 .custom-radio .radio-btn:after {
-    top: 4px;
-    left: 4px;
-    width: 6.5px;
-    height: 6.5px;
+    top: 3px;
+    left: 3px;
+    width: 5.5px;
+    height: 5.5px;
     border-radius: 50%;
     background: #D63249;
 }
