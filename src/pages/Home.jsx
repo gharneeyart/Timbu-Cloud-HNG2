@@ -2,9 +2,11 @@ import React from 'react'
 import Product from '../components/Product'
 import Hero from '../components/Hero'
 import Cart from '../assets/image/Group 1.png'
+import { useCart } from "../contexts/Cart";
 import '../css/Home.css'
 
 const Home = () => {
+  const { cart } = useCart();
   return (
     <div className='home'>
       <nav className="navbar-home">
@@ -20,7 +22,7 @@ const Home = () => {
         <div className="carter">
             <a href="/cart" className="cart-btn">
               <span className="carter-icon"><img src={Cart} alt="" className='cart-img'/> <p>cart</p></span>
-              <span className="cart-count">0</span>
+              <span className="cart-count">{cart.length > 0 ? cart.length : 0}</span>
             </a>
         </div>
         <button className="navbar-toggle">

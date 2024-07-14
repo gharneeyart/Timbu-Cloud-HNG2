@@ -3,8 +3,10 @@ import '../css/Cart.css'
 import Shopping from '../components/Shopping'
 import Order from '../components/Order'
 import Navbar from '../components/Header'
+import { useCart } from "../contexts/Cart";
 
 const Cart = () => {
+  const { cart, cartSubTotal, removeFromCart } = useCart();
   return (
     <>
     <Navbar />

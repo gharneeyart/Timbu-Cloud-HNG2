@@ -1,11 +1,11 @@
 // src/Navbar.js
 import React, { useState } from 'react';
-
+import { useCart } from "../contexts/Cart";
 import Cart from '../assets/image/Group 1 (2).png'
 import '../css/Header.css';
 
 const Navbar = () => {
-  
+  const { cart } = useCart();
 
   return (
     <nav className="navbar navbar-home">
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="cart">
             <a href="/cart" className="cart-btn">
               <span className="cart-icon"><img src={Cart} alt="" className='cart-img'/> <p>cart</p></span>
-              <span className="cart-count">0</span>
+              <span className="cart-count">{cart.length > 0 ? cart.length : 0}</span>
             </a>
         </div>
         <button className="navbar-toggler">

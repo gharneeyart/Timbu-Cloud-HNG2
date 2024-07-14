@@ -25,6 +25,36 @@
     margin-top: 20px;
 }
 
+/* Product.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #FF0DE7;
+    border-color: #FF0DE7;
+    font-weight: 600;
+  }
+  
+  .page-item.active {
+    background-color: #FF0DE7;
+    color: #fff;
+    border-color: #FF0DE7;
+  }
+  
+  .page-item:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+
 @media (min-width: 769px) and (max-width: 1024px){
     .product-title{
         height: 80px;

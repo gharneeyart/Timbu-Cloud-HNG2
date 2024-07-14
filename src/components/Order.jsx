@@ -1,15 +1,17 @@
 import React from 'react'
 import '../css/Order.css'
+import { useCart } from "../contexts/Cart";
 
 const Order = () => {
+  const { cart, cartSubTotal, removeFromCart } = useCart();
   return (
     <div className='orders'>
         <div className="order-head">
            <p>Order Summary</p>
         </div>
         <div className="order-price">
-            <p>ITEMS <span>3</span></p>
-            <p>$75.00</p>
+            <p>ITEMS <span>{cart.length > 0 ? cart.length : 0}</span></p>
+            <p>${cartSubTotal()}.00</p>
         </div>
         <div className="shipping">
            <p>SHIPPING</p>
@@ -26,7 +28,7 @@ const Order = () => {
         <button className='apply'>APPLY</button>
         <div className="order-total">
             <p>TOTAL COST</p>
-            <p>$80.00</p>
+            <p>${cartSubTotal()+5.00}.00</p>
         </div>
         <a href='/checkout' style={{textDecoration:'none'}} className="order-btn">
           <button className='check'>CHECKOUT</button>

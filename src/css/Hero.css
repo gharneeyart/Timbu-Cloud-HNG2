@@ -32,7 +32,10 @@
     width: 50%;
     height: auto;
     background: linear-gradient(180deg, #FF8D24 0%, #F83ECF 100%);
-    border-radius: 50% 30% 30% 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 0;
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .hero{
