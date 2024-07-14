@@ -32,7 +32,7 @@ const Shopping = () => {
            return(
             <div className="cart-card" key={carts.id}>
             <div className="cart-info">
-                <img src={imageUrl} alt="" style={{width:'142px', height:'101px'}}/>
+                <img src={imageUrl} alt="" className='imgs'/>
                 <div className="cart-p">
                     <p style={{fontSize:'20px', fontWeight:'700', margin:'0'}}>{carts.name}</p>
                     <p style={{fontSize:'20px', margin:'0'}}>{carts.color}</p>

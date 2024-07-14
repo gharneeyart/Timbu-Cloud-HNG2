@@ -10,6 +10,20 @@
 .order{
     width: 30%;
 }
+.empty-cart {
+    text-align: center;
+    margin-top: 20px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .empty-cart p {
+    font-size: 24px;
+    margin-top: 10px;
+  }
 @media (min-width: 769px) and (max-width: 1024px){
     .cartpage{
         flex-direction: column;

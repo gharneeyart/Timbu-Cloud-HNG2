@@ -4,7 +4,20 @@ import MasterCard from '../assets/image/Rectangle 15 (2).png'
 import Visa from '../assets/image/Rectangle 17 (2).png'
 import PayPal from '../assets/image/Rectangle 20 (2).png'
 import Cash from '../assets/image/CASH ON DELIVERY.png'
+import { useNavigate } from 'react-router-dom';
+import { useCart } from "../contexts/Cart";
 const Payment = () => {
+  const navigate = useNavigate();
+  const { clearCart } = useCart();
+  const handleConfirmPayment = () => {
+    // Clear cart items from local storage
+    localStorage.removeItem('cartItems'); // Adjust this key if your local storage key is different
+    // Clear the cart context if necessary
+    clearCart();
+
+    // Redirect to the home page
+    navigate('/');
+  };
   return (
     <div className='payment'>
        <div className="" style={{display: 'flex', justifyContent:'start', width:'100%'}}>
@@ -71,7 +84,7 @@ const Payment = () => {
     <p>Save details for future purchases</p>
   </div>
   <div className="">
-    <button className='confirm'>
+    <button className='confirm' onClick={handleConfirmPayment}>
         CONFIRM PAYMENT
     </button>
   </div>

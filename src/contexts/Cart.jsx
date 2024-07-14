@@ -77,6 +77,7 @@ const CartProvider = ({ children }) => {
     const subtotal = cart.reduce((total, item) => total + item.current_price[0].NGN[0] * item.quantity, 0);
     return subtotal;
   };
+  
 
   return (
     <CartContext.Provider value={{ cart, addToCart, removeFromCart,incrementQuantity, decrementQuantity, clearCart, cartSubTotal }}>
