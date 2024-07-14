@@ -3,17 +3,23 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import '../css/ProductDetails.css';
 import Navbar from '../components/Header';
+import { useCart } from "../contexts/Cart";
 
 const ProductDetail = () => {
   const { productid } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [selectedImage, setSelectedImage] = useState('');
+  const { addToCart } = useCart();
 
   const Appid = import.meta.env.VITE_REACT_APP_APPID;
   const Apikey = import.meta.env.VITE_REACT_APP_APIKEY;
   const organId = import.meta.env.VITE_REACT_APP_ORGANIZATIONID;
 
+  const handleAddToCart = (event) => {
+    event.stopPropagation();
+    addToCart(product);
+  };
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -34,7 +40,7 @@ const ProductDetail = () => {
     fetchProduct();
   }, [productid]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className='loading'>Loading...</p>;
   if (!product) return <p>Product not found</p>;
 
   const handleThumbnailClick = (url) => {
@@ -73,7 +79,7 @@ const ProductDetail = () => {
           <p className='product-description'>{product.description}</p>
           <p className='product-price'>&#x24;{product.current_price}.00</p>
           <div className="btn">
-            <button className='addtocarts'>Add to Cart</button>
+            <button className='addtocarts' onClick={handleAddToCart}>Add to Cart</button>
             <button className='buynow'>Buy Now</button>
           </div>
         </div>

@@ -14,7 +14,10 @@ const ProductCard = ({ product }) => {
   const handleQuantityChange = (event) => {
     setQuantity(parseInt(event.target.value));
   };
-
+  // VITE_REACT_APP_API_URL = https://api.timbu.cloud/products?organization_id=05d391b1349b4ae2b68f668f0c2aa257&reverse_sort=false&page=1&size=10&Appid=Q9HDDRKG802F8NS&Apikey=2c09daf4bf454f6dbd6d50d2cc3b3f3a20240712161213556784
+  // VITE_REACT_APP_APPID = Q9HDDRKG802F8NS
+  // VITE_REACT_APP_APIKEY = 2c09daf4bf454f6dbd6d50d2cc3b3f3a20240712161213556784
+  // VITE_REACT_APP_ORGANIZATIONID = 05d391b1349b4ae2b68f668f0c2aa257
   const handleAddToCart = (event) => {
     event.stopPropagation();
     addToCart(product, quantity);

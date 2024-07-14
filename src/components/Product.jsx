@@ -50,7 +50,9 @@ const Product = () => {
       </div>
       <div className="product-list">
         {loading ? (
-          <p>Loading...</p>
+          <div className="loading" >
+            <p>Loading...</p>
+          </div>
         ) : (
           Array.isArray(currentProducts) && currentProducts.length > 0 ? (
             currentProducts.map((product) => (

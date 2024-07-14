@@ -44,8 +44,8 @@ const Shopping = () => {
                     <span className='quant'>{carts.quantity}</span>
                     <button onClick={() => incrementQuantity(carts.id)}>+</button>
                 </div>
-                <p>&#x24;{carts.current_price[0].USD[0]}.00</p>
-                <p>&#x24;{carts.current_price[0].USD[0]*carts.quantity}.00</p>
+                <p>&#x24;{carts.current_price[0].NGN[0]}.00</p>
+                <p>&#x24;{carts.current_price[0].NGN[0]*carts.quantity}.00</p>
                 <button onClick={() => removeFromCart(carts.id)} style={{background:'none', border:'0'}}>
                     <MdClear size={30} />
                 </button>

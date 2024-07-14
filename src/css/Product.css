@@ -53,6 +53,15 @@
   .page-item:hover:not(.active) {
     background-color: #ddd;
   }
+  .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-size: 40px;
+    
+  }
   
 
 @media (min-width: 769px) and (max-width: 1024px){

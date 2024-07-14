@@ -74,7 +74,7 @@ const CartProvider = ({ children }) => {
   };
 
   const cartSubTotal = () => {
-    const subtotal = cart.reduce((total, item) => total + item.current_price[0].USD[0] * item.quantity, 0);
+    const subtotal = cart.reduce((total, item) => total + item.current_price[0].NGN[0] * item.quantity, 0);
     return subtotal;
   };
 
