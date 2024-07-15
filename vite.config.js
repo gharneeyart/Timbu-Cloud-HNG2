@@ -11,7 +11,7 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
-    // port: 5173,
+    port: 5173,
   },
   plugins: [react()],
 })
